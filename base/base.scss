@@ -1,0 +1,22 @@
+$fuente-principal: "Roboto", sans-serif;
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  font-family: $fuente-principal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
