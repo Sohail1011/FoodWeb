@@ -1,0 +1,38 @@
+@import "./test";
+@import "./variables";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: $fuente-principal;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  font-size: 2rem;
+  color: $negro;
+}

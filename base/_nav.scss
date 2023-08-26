@@ -1,0 +1,35 @@
+@import "./variables";
+
+.navegacion {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: auto;
+
+  &__link {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #000;
+
+    &__btn {
+      background-color: $primario;
+      color: $blanco;
+      padding: 12px 30px 12px 30px;
+      font-weight: 700;
+      font-size: 1.3rem;
+      border-radius: 10px;
+    }
+  }
+}
+
+.principal {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem 0;
+  align-items: center;
+
+  &__logo {
+    width: 20rem;
+    margin-bottom: 0;
+  }
+}

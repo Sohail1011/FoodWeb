@@ -1,11 +1,65 @@
+.testing {
+  padding: 5rem 0;
+}
+.testing__heading {
+  text-align: center;
+}
+.testing__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.testimonial:nth-child(1) {
+  grid-column: 1/4;
+}
+
+.testimonial {
+  background-color: #455a64;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  color: #ffffff;
+}
+.testimonial__header {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.testimonial__imagen {
+  flex-basis: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.testimonial__autor {
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+.testimonial__text {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 2rem 0 0 0;
+  padding-left: 3rem;
+  position: relative;
+  color: #ffffff;
+}
+
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
-  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -14,9 +68,18 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-size: 2.3rem;
+}
+
 img {
   max-width: 100%;
   display: block;
+}
+
+p {
+  font-size: 2rem;
+  color: #000;
 }
 
 .navegacion {
@@ -39,12 +102,6 @@ img {
   border-radius: 10px;
 }
 
-.contenedor {
-  width: 95%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .principal {
   display: flex;
   justify-content: space-between;
@@ -54,4 +111,73 @@ img {
 .principal__logo {
   width: 20rem;
   margin-bottom: 0;
+}
+
+.hero {
+  margin-top: 3rem;
+}
+.hero__wave {
+  margin-bottom: -32px;
+}
+.hero__contenido {
+  background-color: #e8505b;
+}
+.hero__heading {
+  text-align: center;
+  color: #ffffff;
+}
+.hero__heading__description {
+  font-size: 1rem;
+  display: block;
+}
+.hero__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.consult__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+.consult__content {
+  background-color: #e8505b;
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.consult__heading {
+  color: #ffffff;
+  text-align: center;
+}
+.consult__campo {
+  margin-bottom: 1rem;
+}
+.consult__label {
+  display: block;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 1rem 0;
+}
+.consult__input {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+}
+.consult__btn {
+  background-color: #455a64;
+  color: #ffffff;
+  display: flex;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  padding: 0.9rem 12.1rem;
+  border-radius: 0.7rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  border: none;
+}
+.consult__img-content {
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

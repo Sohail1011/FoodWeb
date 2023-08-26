@@ -1,0 +1,27 @@
+@import "./variables";
+
+.hero {
+  margin-top: 3rem;
+
+  &__wave {
+    margin-bottom: -32px;
+  }
+
+  &__contenido {
+    background-color: $primario;
+  }
+
+  &__heading {
+    text-align: center;
+    color: $blanco;
+    &__description {
+      font-size: 1rem;
+      display: block;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
